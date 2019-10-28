@@ -61,8 +61,11 @@ minetest.register_globalstep(function(dtime)
 		local image = math.floor((angle_relative/22.5) + 0.5)%16
 
 		if hud_compass[pname].enabled and image ~= hud_compass[pname].last_image then
-			player:hud_change(hud_compass[pname].id, "text", "realcompass_"..image..".png")
-			hud_compass[pname].last_image = image
+			local rc = player:hud_change(hud_compass[pname].id, "text", "realcompass_"..image..".png")
+			-- Check return code, seems to fix occasional startup glitch.
+			if rc == 1 then
+				hud_compass[pname].last_image = image
+			end
 		end
 	end
 end)
