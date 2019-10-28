@@ -35,6 +35,7 @@ minetest.register_chatcommand("compass", {
 		local player = minetest.get_player_by_name(pname)
 		if hud_compass[pname].enabled == true then  -- is enabled
 			hud_compass[pname].enabled = false  -- toggle to disabled
+			hud_compass[pname].last_image = -1  -- reset initial direction
 			player:hud_change(hud_compass[pname].id, "text", "")  -- blank hud
 			storage:set_string(pname, "0")
 		else  -- is disabled
