@@ -5,7 +5,7 @@ A Minetest mod to optionally place a HUD compass in the bottom right corner of t
 
 By David G (kestral246)
 
-![HUD Compass Screenshot](screenshot.jpeg "hud_compass")
+![HUD Compass Screenshot](screenshot.png "hud_compass")
 
 How to enable
 -------------
