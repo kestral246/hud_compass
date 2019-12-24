@@ -1,7 +1,7 @@
 HUD Compass [hud_compass]
 -------------------------
 
-A Minetest mod to optionally place a HUD compass in the bottom right corner of the screen.
+A Minetest mod to optionally place a HUD compass on the screen.
 
 By David G (kestral246)
 
@@ -12,11 +12,22 @@ How to enable
 
 This mod defaults to not displaying compass. To enable, use the chat command:
 
-> "/compass"
+	"/compass" -> By default this places a compass in the bottom right corner of the screen.
 
 Repeated use of this command will toggle the compass display off and on.
 
-Local mod storage is used to maintain state of hud_compass display between sessions, per user.
+**New:** When given with an argument, the position of the compass can be changed. This is particularly useful with Android clients, where the bottom right corner of the screen has the jump button.
+
+	"/compass 1" -> top right corner
+	"/compass 2" -> bottom right corner
+	"/compass 3" -> bottom left corner
+	"/compass 4" -> top left corner
+
+In addition:
+
+	"/compass 0" -> forces compass off.
+
+Local mod storage is used to maintain the state and position of hud_compass display between sessions, per user.
 
 
 Licenses
