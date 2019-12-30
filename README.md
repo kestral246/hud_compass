@@ -10,22 +10,29 @@ By David G (kestral246)
 How to enable
 -------------
 
-This mod defaults to not displaying compass and clock. To enable, use the chat command:
+This mod defaults to not displaying a compass or a clock. To enable, use the chat command:
 
-	"/compass" -> By default this places a compass and clock in the bottom right corner of the screen.
+	"/compass" -> By default this places just a compass in the bottom right corner of the screen.
 
-Repeated use of this command will toggle the display of the compass and clock off and on.
+Repeated use of this command will toggle the display of the compass off and on.
 
-**New:** When given with an argument, the position of the compass and clock can be changed. This is particularly useful with Android clients, where the bottom right corner of the screen has the jump button.
+When given with an argument, the user can select whether to display just a compass, or a compass and a clock, and which corner of the screen to place them in. This is particularly useful with Android clients, where the bottom right corner of the screen has the jump button.
 
-	"/compass 1" -> top right corner
-	"/compass 2" -> bottom right corner
-	"/compass 3" -> bottom left corner
-	"/compass 4" -> top left corner
+	"/compass 1" -> compass only, top right corner
+	"/compass 2" -> compass only, bottom right corner
+	"/compass 3" -> compass only, bottom left corner
+	"/compass 4" -> compass only, top left corner
+	
+	"/compass 5" -> compass and clock, top right corner
+	"/compass 6" -> compass and clock, bottom right corner
+	"/compass 7" -> compass and clock, bottom left corner
+	"/compass 8" -> compass and clock, top left corner
 
 In addition:
 
-	"/compass 0" -> forces compass off.
+	"/compass 0" -> forces compass and clock off.
+
+**Note:** The clock is a 24-hour clock, with only one hand that displays the hours. Noon is at the top and midnight is at the bottom.
 
 Local mod storage is used to maintain the state and position of hud_compass display between sessions, per user.
 
@@ -40,8 +47,7 @@ Media (textures)
 
 > Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
 
-> (Textures were copied from my realcompass mod, which were originally based on the textures created by tacotexmex for the ccompass mod.)
- 
+> (Compass textures were copied from my realcompass mod, which were originally based on the textures created by tacotexmex for the ccompass mod. Clock textures were derived from these same textures.)
 
 
 
