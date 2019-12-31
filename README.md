@@ -1,7 +1,7 @@
 HUD Compass [hud_compass]
 -------------------------
 
-A Minetest mod to optionally place a HUD compass and 24-hour clock on the screen.
+A Minetest mod to optionally place a HUD compass and a 24-hour clock on the screen.
 
 By David G (kestral246)
 
@@ -33,6 +33,8 @@ In addition:
 	"/compass 0" -> forces compass and clock off.
 
 **Note:** The clock is a 24-hour clock, with only one hand that displays the hours. Noon is at the top and midnight is at the bottom.
+
+**New:** The default initial state can now be set in minetest.conf using "compass\_default\_corner = n", where "n" can be one of the eight corner numbers above. If it's positive, the compass (or compass and clock) will be enabled at start, while if it's negative, they will start disabled.
 
 Local mod storage is used to maintain the state and position of hud_compass display between sessions, per user.
 

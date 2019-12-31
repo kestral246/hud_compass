@@ -2,7 +2,7 @@
 -- Optionally place a compass and 24-hour clock on the screen.
 -- A HUD version of my realcompass mod.
 -- By David_G (kestral246@gmail.com)
--- 2019-12-30
+-- 2019-12-31
 
 local hud_compass = {}
 local storage = minetest.get_mod_storage()
@@ -12,7 +12,8 @@ local storage = minetest.get_mod_storage()
 --   5 = NE, 6 = SE, 7 = SW, 8 = NW (both compass and clock)
 --   positive == enabled, negative == disabled
 
-local default_corner = -2  -- SE corner, compass only, off by default
+-- Define default (if not overridden): SE corner, compass only, off by default
+local default_corner = tonumber(minetest.settings:get("compass_default_corner") or -2)
 
 local lookup_compass = {
 	{hud_elem_type="image", text="", position={x=1,y=0}, scale={x=4,y=4}, alignment={x=-1,y=1}, offset={x=-8,y=4}},
