@@ -39,6 +39,11 @@ In addition:
 Local mod storage is used to maintain the state and position of hud_compass display between sessions, per user.
 
 
+Special Thanks
+--------------
+Special thanks go out to MoNTE48, for pointing out that the image files could be significantly reduced with zopflipng (much better than with optipng), in this mod's first Pull Request.
+
+
 Licenses
 --------
 Source code
